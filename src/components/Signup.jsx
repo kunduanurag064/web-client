@@ -12,7 +12,7 @@ const Signup = ()=>{
     const history = useHistory();
 
     function navigateToLogin() {
-        history.push('/login');
+        history.push('/');
     }
 
     const handlesignup = async (e) => {
