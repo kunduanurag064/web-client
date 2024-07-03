@@ -19,7 +19,7 @@ const Signup = ()=>{
             return ;
         }
        try {
-        const response = await fetch('http://localhost:3000/api/user/register',{
+        const response = await fetch('http://web-server-nu-two.vercel.app/user/register',{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'
