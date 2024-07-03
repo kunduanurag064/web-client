@@ -3,17 +3,11 @@ import './compcss.css';
 import logo from '/src/assets/logo.jpg'; 
 import Footer from "./Footer";
 import { Link } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
 
 const Signup = ()=>{
     const [emailaddress , setEAdress] = useState("");
     const [password , setPass] = useState("");
     const [username,setName] = useState("");
-    const history = useHistory();
-
-    function navigateToLogin() {
-        history.push('/');
-    }
 
     const handlesignup = async (e) => {
         if(password.length<6){
@@ -25,7 +19,7 @@ const Signup = ()=>{
             return ;
         }
        try {
-        const response = await fetch('https://web-server-nu-two.vercel.app/api/user/register',{
+        const response = await fetch('https://web-server-nu-two.vercel.app/user/register',{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -42,7 +36,7 @@ const Signup = ()=>{
           const userDetails = await response.text();
           console.log('email received from server:', userDetails);
           if( userDetails === emailaddress ){
-            navigateToLogin();
+            window.location.href = '/login';
           }
        } catch (error) {
         console.log("there is an error ",error);
@@ -82,4 +76,4 @@ const Signup = ()=>{
 
 }
 
-export default Signup;
+export default Signup
