@@ -57,7 +57,7 @@ const Createnew = ()=>{
         setTitle("");
 
         try {
-            const response = await fetch('http://localhost:3000/api/user/createpost',{
+            const response = await fetch('http://web-server-nu-two.vercel.app//api/user/createpost',{
                 method:'POST',
                 headers:{
                     'Content-Type':'Application/json'
