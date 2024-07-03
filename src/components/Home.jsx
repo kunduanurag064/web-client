@@ -11,7 +11,7 @@ const Home = () => {
 
     const getData = async () => {
         try {
-            const response = await fetch('http://web-server-nu-two.vercel.app/api/user/posts');
+            const response = await fetch('https://web-server-nu-two.vercel.app/api/user/posts');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
