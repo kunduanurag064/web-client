@@ -14,7 +14,7 @@ const Posts = ()=>{
     const getData = async () => {
         if(!userid) return ;
         try {
-            const response = await fetch(`http://web-server-nu-two.vercel.app/api/user/myposts?userid=${userid}`);
+            const response = await fetch(`https://web-server-nu-two.vercel.app/api/user/myposts?userid=${userid}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
