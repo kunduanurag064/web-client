@@ -19,7 +19,7 @@ const Login = ()=>{
             return;
         }
         try {
-            const response = await fetch('http://web-server-nu-two.vercel.app/api/user/login',{
+            const response = await fetch('https://web-server-nu-two.vercel.app/api/user/login',{
                 method:'POST',
                 headers:{
                     'Content-Type': 'application/json'
