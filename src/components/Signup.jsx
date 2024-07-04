@@ -19,7 +19,7 @@ const Signup = ()=>{
             return ;
         }
        try {
-        const response = await fetch('https://web-server-nu-two.vercel.app/user/register',{
+        const response = await fetch('https://web-server-nu-two.vercel.app/api/user/register',{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ const Signup = ()=>{
        } catch (error) {
         console.log("there is an error ",error);
         alert("try again with different username,email and password.");
-        setEaddress("");
+        setEAdress("");
         setPass("");
         setName("");
        }
