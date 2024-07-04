@@ -34,9 +34,9 @@ const Signup = ()=>{
           }
   
           const userDetails = await response.text();
-          console.log('email received from server:', userDetails);
+          //console.log('email received from server:', userDetails);
           if( userDetails === emailaddress ){
-            window.location.href = '/login';
+            alert(`Account created with email-${userDetails}! please go to login now.`);
           }
        } catch (error) {
         console.log("there is an error ",error);
