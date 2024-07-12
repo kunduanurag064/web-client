@@ -41,7 +41,7 @@ function Footer(){
                     
                 </div>
             </footer>
-            © 2024 The-Articles (created by - ANURAG KUNDU) | All Rights Reserved
+            © 2024 The-Articles (created by - ANURAG KUNDU)
         </>
     )
 }
