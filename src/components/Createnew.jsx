@@ -57,7 +57,7 @@ const Createnew = ()=>{
         setTitle("");
 
         try {
-            const response = await fetch('https://web-server-nu-two.vercel.app/api/user/createpost',{
+            const response = await fetch('https://web-server-nu-----prevented-to-add-post-----two.vercel.app/api/user/createpost',{
                 method:'POST',
                 headers:{
                     'Content-Type':'Application/json'
