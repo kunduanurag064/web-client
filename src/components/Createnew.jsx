@@ -82,7 +82,7 @@ const Createnew = ()=>{
         <>
         {  !userAuthentication() ? window.location.href="login" : isloggedin=true  }
         <br/>
-        <button className="create-and-publish-post" onClick={submitContent}>Create Post</button>
+        <button className="create-and-publish-post" onClick={submitCcccccccccccontent}>Create Post</button>
         <br/>
          <h1>Let's create new Article/Post</h1>
 
